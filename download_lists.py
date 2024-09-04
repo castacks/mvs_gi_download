@@ -19,6 +19,14 @@ def main():
         downlaod_helper.download( BUCKET_NAME, 
                                 'MVS_Fisheye_Dataset/minio_list_validate.txt', 
                                 './minio_list_validate.txt' )
+        
+        downlaod_helper.download( BUCKET_NAME,
+                                'MVS_Fisheye_Dataset/tar_list_train.txt', 
+                                './tar_list_train.txt' )
+
+        downlaod_helper.download( BUCKET_NAME, 
+                                'MVS_Fisheye_Dataset/tar_list_validate.txt', 
+                                './tar_list_validate.txt' )
     except Exception as exc:
         print(exc)
         return 1
