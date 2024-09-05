@@ -41,12 +41,14 @@ where
 
 To download `validate` dataset, copy and edit `minio_list_validate.txt` and use `--dataset_type validate` when running the above command.
 
-# Download the ckeckpoints, hardware-accelerated models, and sample data #
+# Download the ckeckpoints, hardware-optimized models, and sample data #
 
 Do 
 
 ```bash
 python3 download_models.py
 ```
+
+The total size of the checkpoints, optimized models, and sample data is about 5.8GB.
 
 Enjoy!
