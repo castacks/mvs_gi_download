@@ -1,3 +1,9 @@
+# Prerequisites #
+
+Please refer to `requirements.txt`. Basically, we use [minio][minio_link] to access our object storage server.
+
+[minio_link]: https://min.io/docs/minio/linux/developers/python/API.html?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8976569894&hsa_cam=20593618271&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwreW2BhBhEiwAavLwfJxj-JjOIuzfWy0R6aaIzdi4KdRls1W_F7W24h2TGRjmtXzM8yhrrhoCcLIQAvD_BwE#python-client-api-reference
+
 # Download the dataset #
 
 clone this rebpo.
@@ -34,5 +40,13 @@ where
 - __dataset_type__: Choose from `train` and `validate` depending on which dataset is being downloaded.
 
 To download `validate` dataset, copy and edit `minio_list_validate.txt` and use `--dataset_type validate` when running the above command.
+
+# Download the ckeckpoints, hardware-accelerated models, and sample data #
+
+Do 
+
+```bash
+python3 download_models.py
+```
 
 Enjoy!
