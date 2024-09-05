@@ -1,3 +1,5 @@
 *.pyc
-datasets/
 *.txt
+
+datasets/
+models_and_samples/
